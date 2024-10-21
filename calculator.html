@@ -3,23 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Time Value of Money Calculator</title>
+  <title>Future Value and Present Value Calculations</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <!-- Calculator Section -->
-    <h2>Time Value of Money Calculator</h2>
+    <!-- Back to Home Button -->
+    <a href="index.html">
+      <button>Back to Home</button>
+    </a>
 
-    <!-- Future Value (FV) and Present Value (PV) Sections -->
+    <!-- Calculator Section -->
+    <h2>Future Value and Present Value Calculations</h2>
+
+    <!-- Future Value (FV) Section -->
     <div class="section">
       <h3>Calculate Future Value (FV)</h3>
-      <!-- FV Calculation Inputs and Button Here -->
+      <input type="number" id="pv" placeholder="Present Value (PV) - the dollar amount invested" required>
+      <input type="number" id="rate_fv" placeholder="Annual Interest Rate (%) - the % annual return" required>
+      <input type="number" id="time_fv" placeholder="Time (years) - how long your investment will compound" required>
+      <button id="calculate_fv">Calculate Future Value</button>
     </div>
 
+    <!-- Present Value (PV) Section -->
     <div class="section">
       <h3>Calculate Present Value (PV)</h3>
-      <!-- PV Calculation Inputs and Button Here -->
+      <input type="number" id="fv" placeholder="Future Value (FV) - the future dollar amount desired " required>
+      <input type="number" id="rate_pv" placeholder="Annual Interest Rate (%) - the % annual return" required>
+      <input type="number" id="time_pv" placeholder="Time (years) - how long your investment will compound" required>
+      <button id="calculate_pv">Calculate Present Value</button>
     </div>
 
     <div>
