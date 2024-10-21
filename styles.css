@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #00416A, #00B294); /* Dark blue to green gradient */
   color: white; /* All text white */
-  height: 100vh;
+  min-height: 100vh; /* Ensure background covers full viewport height */
   margin: 0;
   display: flex;
   flex-direction: column; /* Stack elements vertically */
@@ -11,11 +11,18 @@ body {
   justify-content: flex-start; /* Align items to the top */
 }
 
+/* Adjust the container for centering and uniform size */
 .container {
   padding: 20px;
-  max-width: 400px;
+  max-width: 1000px; /* Increase the width for more central alignment */
   width: 100%;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure everything inside the container is centered */
 }
 
 /* Style for the welcome section */
@@ -45,11 +52,16 @@ body {
   background-color: #00416A; /* Darker on hover */
 }
 
+/* Adjusting section alignment and centering */
 .section {
   margin-bottom: 20px; /* Space between sections */
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.8); /* Darker background for sections */
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
   border-radius: 10px;
+  width: 100%; /* Full width for better alignment */
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  align-items: center; /* Center align inputs */
 }
 
 input {
@@ -90,4 +102,6 @@ h3 {
 #result {
   font-weight: bold;
   font-size: 18px;
+  text-align: center;
 }
+
